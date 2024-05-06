@@ -1,0 +1,286 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  overflow-y: hidden; 
+  display: flex;
+  justify-content: center;
+
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.ui{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color:green;
+}
+
+#three{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  display: none;
+  /* display: block; */
+  pointer-events: none;
+}
+
+#mirrorTouch{
+  display: none;
+}
+
+#defaultCanvas0{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+  display: none;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+.holder{
+  width: 100%;
+  height:max-content ;
+  display: flex;
+  flex-flow: nowrap column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#message{
+  display: none;
+  text-align: center;
+}
+
+#login{
+  width: 80%;
+  margin: 2em;
+  margin-top: 20%;
+  display: flex;
+  flex-flow: nowrap column;
+  gap: 1em;
+  justify-content: center;
+  justify-self: center;
+}
+
+.login-item input{
+  width: 60%;
+}
+
+.begin-text{
+  width: 70%;
+  display: flex;
+  flex-flow: nowrap column;
+  align-content: center;
+  justify-content: center;
+}
+
+#submitbttn{
+  width: 70%;
+  background-color: rgb(122, 198, 135);
+}
+
+#submitbttn:hover{
+  background-color: rgb(254, 137, 217);
+}
+
+audio{
+  display: none;
+}
+
+.book{
+  display: flex;
+  flex-flow: nowrap row;
+  gap: 1em;
+  justify-content: center;
+  display: none;
+}
+
+.page{
+  flex-grow: 1;
+  width: max-content;
+}
+
+.scroll-text {
+  white-space: pre-wrap;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  color:  #1a1a1a;
+  background-color:white;
+  width: 95%;
+  padding-top: 0%;
+  padding: 2em;
+  transform: translateX(-5%);
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+}
+
+.scrolling {
+  /* position: absolute; */
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  animation: scroll 15s linear infinite;
+  overflow-wrap: break-word;
+
+}
+
+.scroll-text:hover {
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+@keyframes scroll {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-100%); }
+}
+
+
+.bookImg{
+  width: 30vw;
+}
+
+#message{
+  font-size: larger;
+  font-weight: bold;
+}
+
+strong{
+  font-weight: bolder;
+  color: palevioletred;
+}
+
+.opacity{
+  text-align: center;
+  font-size: xx-large;
+  display: none;
+}
+
+.opacity1{
+  display: none;
+}
+
+input{
+  width: 93%;
+  height: fit-content;
+  padding: 0.5em;
+}
+
+#para1{
+  height: max-content;
+}
+
+.threeUI{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  z-index: 5;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}

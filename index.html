@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- <script type="module" src="/sketch.js"></script> -->
+  <script type="module"  src="/start.js"></script>
+  <script type="module" src="/main.js"></script>
+  <div class="ui">
+    <h3 id="position">x</h3>
+    <h3 id="angle">y</h3>
+  </div>
+
+  <div class="threeUI">
+    <h3 id="interaction"></h3>
+  </div>
+
+  <div class='holder'>
+    <div class="begin-text">
+      <div id="login">
+       
+        <div class="login-item">
+          <h1>Login</h1>
+          <label for="username">username:</label>
+          <input type="text" name="username" id="username" placeholder="get a username" >
+        </div>
+
+        <div class="login-item">
+          <label for="password">password:</label>
+          <input type="password" name="password" id="password" placeholder="get a password">
+        </div>
+       <button name="submit" id="submitbttn"> submit</button> 
+      </div>
+      <p id="message">Welcome.</p>
+      <audio controls id="audio1">
+        <source src="/audio/text1.mp3" type="audio/mpeg" >
+      </audio>
+      <div>
+
+      </div>
+         <div class="book" id="book1">
+          <div class="page">
+            <img src="/cat.jpg" alt="" class="bookImg" width="100%">
+            <img src="/alice-cat.jpg" alt="" class="bookImg"  width="100%">
+          </div>
+              <div class="scroll-text" id="para">
+              <div id="para1">
+                <div id="chapter1" class="scrolling opacity1">
+                  <p>
+
+ʞɔoWɿɘddɒႱ
+
+ƨɘvoƚ yʜƚilƨ ɘʜƚ bnɒ ,ǫilliɿd ƨɒwT
+:ɘdɒw ɘʜƚ ni ɘldmiǫ bnɒ ɘɿyǫ biᗡ
+,ƨɘvoǫoɿod ɘʜƚ ɘɿɘw yƨmim llA
+.ɘdɒɿǫƚuo ƨʜƚɒɿ ɘmom ɘʜƚ bnA
+        
+        
+!noƨ ym ,ʞɔowɿɘddɒႱ ɘʜƚ ɘɿɒwɘᙠ“
+ ”!ʜɔƚɒnƨɿɘbnɒᙠ ƨuoimuɿʇ ɘʜT
+ !ʜɔƚɒɔ ƚɒʜƚ ƨwɒlɔ ɘʜƚ ,ɘƚid ƚɒʜƚ ƨwɒႱ ɘʜT
+nuʜƨ bnɒ ,bɿid duႱduႱ ɘʜƚ ɘɿɒwɘᙠ
+        
+        
+ ⁏bnɒʜ ni bɿowƨ lɒqɿov ƨiʜ ʞooƚ ɘH
+ —ƚʜǫuoƨ ɘʜ ɘoʇ ɘmoxnɒm ɘʜƚ ɘmiƚ ǫno⅃
+  ɘɘɿƚ muƚmuT ɘʜƚ yd ɘʜ bɘƚƨɘɿ oƧ
+ .ƚʜǫuoʜƚ ni ɘliʜwɒ booƚƨ bnA
+        
+        
+,booƚƨ ɘʜ ƚʜǫuoʜƚ ʜƨiʇʇu ni ƨɒ ,bnA
+,ɘmɒlʇ ʇo ƨɘyɘ ʜƚiw ,ʞɔowɿɘddɒႱ ɘʜT
+,boow yɘǫluƚ ɘʜƚ ʜǫuoɿʜƚ ǫnilʇʇiʜw ɘmɒƆ
+!ɘmɒɔ ƚi ƨɒ bɘldɿud bnA
+        
+        
+ʜǫuoɿʜƚ bnɒ ʜǫuoɿʜƚ bnA !owƚ ,ɘnO !owƚ ,ɘnO
+!ʞɔɒnƨ-ɿɘʞɔinƨ ƚnɘw ɘbɒld lɒqɿov ɘʜT
+ bɒɘʜ ƨƚi ʜƚiw bnɒ ,bɒɘb ƚi ƚʇɘl ɘH
+.ʞɔɒd ǫniʜqmulɒǫ ƚnɘw ɘH
+        
+␚ʞɔowɿɘddɒႱ ɘʜƚ niɒlƨ uoʜƚ ƚƨɒʜ bnA“
+!yod ʜƨimɒɘd ym ,ƨmɿɒ ym oƚ ɘmoƆ
+ ”!yɒllɒƆ !ʜoollɒƆ !yɒb ƨuoႱdɒɿʇ O
+.yoႱ ƨiʜ ni bɘlƚɿoʜɔ ɘH
+        
+        
+ƨɘvoƚ yʜƚilƨ ɘʜƚ bnɒ ,ǫilliɿd ƨɒwT’
+ :ɘdɒw ɘʜƚ ni ɘldmiǫ bnɒ ɘɿyǫ biᗡ
+,ƨɘvoǫoɿod ɘʜƚ ɘɿɘw yƨmim llA
+      '.ɘdɒɿǫƚuo ƨʜƚɒɿ ɘmom ɘʜƚ bnA`;
+                  </p>
+                </div>
+                <div id="chapter2" class="scrolling opacity1">
+                  <p>
+
+“I declare it’s marked out just like a large chessboard!” Alice said at last. “There ought to be some men moving about somewhere—and so there are!” She added in a tone of delight, and her heart began to beat quick with excitement as she went on. “It’s a great huge game of chess that’s being played—all over the world—if this is the world at all, you know. Oh, what fun it is! How I wish I was one of them! I wouldn’t mind being a Pawn, if only I might join—though of course I should like to be a Queen, best.”
+
+She glanced rather shyly at the real Queen as she said this, but her companion only smiled pleasantly, and said, “That’s easily managed. You can be the White Queen’s Pawn, if you like, as Lily’s too young to play; and you’re in the Second Square to begin with: when you get to the Eighth Square you’ll be a Queen—” Just at this moment, somehow or other, they began to run.
+                    
+                    
+Alice never could quite make out, in thinking it over afterwards, how it was that they began: all she remembers is, that they were running hand in hand, and the Queen went so fast that it was all she could do to keep up with her: and still the Queen kept crying “Faster! Faster!” but Alice felt she could not go faster, though she had not breath left to say so.
+                    
+The most curious part of the thing was, that the trees and the other things round them never changed their places at all: however fast they went, they never seemed to pass anything. “I wonder if all the things move along with us?” thought poor puzzled Alice. And the Queen seemed to guess her thoughts, for she cried, “Faster! Don’t try to talk!”
+                    
+Not that Alice had any idea of doing that. She felt as if she would never be able to talk again, she was getting so much out of breath: and still the Queen cried “Faster! Faster!” and dragged her along. “Are we nearly there?” Alice managed to pant out at last.
+                    
+“Nearly there!” the Queen repeated. “Why, we passed it ten minutes ago! Faster!” And they ran on for a time in silence, with the wind whistling in Alice’s ears, and almost blowing her hair off her head, she fancied.
+                    
+“Now! Now!” cried the Queen. “Faster! Faster!” And they went so fast that at last they seemed to skim through the air, hardly touching the ground with their feet, till suddenly, just as Alice was getting quite exhausted, they stopped, and she found herself sitting on the ground, breathless and giddy.
+                    
+The Queen propped her up against a tree, and said kindly, “You may rest a little now.”
+                    
+Alice looked round her in great surprise. “Why, I do believe we’ve been under this tree the whole time! Everything’s just as it was!”
+                    
+“Of course it is,” said the Queen, “what would you have it?”
+                    
+“Well, in our country,” said Alice, still panting a little, “you’d generally get to somewhere else—if you ran very fast for a long time, as we’ve been doing.”
+                    
+“A slow sort of country!” said the Queen. “Now, here, you see, it takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that!”
+                    
+“I’d rather not try, please!” said Alice. “I’m quite content to stay here—only I am so hot and thirsty!”
+
+                                        
+                  </p>
+                </div>
+                <div id="chapter3" class="scrolling opacity1">
+                  <p>
+ “This must be the wood,” she said thoughtfully to herself, “where things have no names. I wonder what’ll become of my name when I go in? I shouldn’t like to lose it at all—because they’d have to give me another, and it would be almost certain to be an ugly one. But then the fun would be trying to find the creature that had got my old name! That’s just like the advertisements, you know, when people lose dogs—‘answers to the name of “Dash:” had on a brass collar’—just fancy calling everything you met ‘Alice,’ till one of them answered! Only they wouldn’t answer at all, if they were wise.”
+
+She was rambling on in this way when she reached the wood: it looked very cool and shady. “Well, at any rate it’s a great comfort,” she said as she stepped under the trees, “after being so hot, to get into the—into what?” she went on, rather surprised at not being able to think of the word. “I mean to get under the—under the—under this, you know!” putting her hand on the trunk of the tree. “What does it call itself, I wonder? I do believe it’s got no name—why, to be sure it hasn’t!”
+                    
+She stood silent for a minute, thinking: then she suddenly began again. “Then it really has happened, after all! And now, who am I? I will remember, if I can! I’m determined to do it!” But being determined didn’t help much, and all she could say, after a great deal of puzzling, was, “L, I know it begins with L!”
+                    
+Just then a Fawn came wandering by: it looked at Alice with its large gentle eyes, but didn’t seem at all frightened. “Here then! Here then!” Alice said, as she held out her hand and tried to stroke it; but it only started back a little, and then stood looking at her again.
+                    
+“What do you call yourself?” the Fawn said at last. Such a soft sweet voice it had!
+                    
+“I wish I knew!” thought poor Alice. She answered, rather sadly, “Nothing, just now.”
+                    
+“Think again,” it said: “that won’t do.”
+                    
+Alice thought, but nothing came of it. “Please, would you tell me what you call yourself?” she said timidly. “I think that might help a little.”
+                    
+“I’ll tell you, if you’ll move a little further on,” the Fawn said. “I can’t remember here.”
+                    
+So they walked on together though the wood, Alice with her arms clasped lovingly round the soft neck of the Fawn, till they came out into another open field, and here the Fawn gave a sudden bound into the air, and shook itself free from Alice’s arms. “I’m a Fawn!” it cried out in a voice of delight, “and, dear me! you’re a human child!” A sudden look of alarm came into its beautiful brown eyes, and in another moment it had darted away at full speed.
+                    
+Alice stood looking after it, almost ready to cry with vexation at having lost her dear little fellow-traveller so suddenly. “However, I know my name now.” she said, “that’s some comfort. Alice—Alice—I won’t forget it again. And now, which of these finger-posts ought I to follow, I wonder?”
+                    
+It was not a very difficult question to answer, as there was only one road through the wood, and the two finger-posts both pointed along it. “I’ll settle it,” Alice said to herself, “when the road divides and they point different ways.”
+                    
+But this did not seem likely to happen. She went on and on, a long way, but wherever the road divided there were sure to be two finger-posts pointing the same way, one marked “TO TWEEDLEDUM’S HOUSE” and the other “TO THE HOUSE OF TWEEDLEDEE.”
+                    
+“I do believe,” said Alice at last, “that they live in the same house! I wonder I never thought of that before—But I can’t stay there long. I’ll just call and say ‘how d’you do?’ and ask them the way out of the wood. If I could only get to the Eighth Square before it gets dark!” So she wandered on, talking to herself as she went, till, on turning a sharp corner, she came upon two fat little men, so suddenly that she could not help starting back, but in another moment she recovered herself, feeling sure that they must be.
+                                        
+                  </p>
+                </div>
+                <div id="chapter4" class="scrolling opacity1">
+                  <p>
+ɘɘbɘlbɘɘwT biɒƨ "won ϱnimɒɘɿb ƨɘH''
+
+"ɈɒʜɈ ƨƨɘυϱ nɒɔ γbodoИ ",biɒƨ ɘɔilA"⸮ Ɉυodɒ ϱnimɒɘɿb ƨɘʜ ʞniʜɈ υoγ ob Ɉɒʜw bnɒ   
+                    
+ γlɈnɒʜqmυiɿɈ ƨbnɒʜ ƨiʜ ϱniqqɒlɔ bɘmiɒlɔxɘ ɘɘbɘlbɘɘwT !υoγ Ɉυodɒ ,γʜW" 
+                    
+"⸮ɘd bυoγ ɘƨoqqυƨ υoγ ob ɘɿɘʜw ,υoγ Ɉυodɒ ϱnimɒɘɿb ʇʇo Ɉʇɘl ɘʜ ʇi bnA"
+                    
+,ɘɔilA biɒƨ "ɘƨɿυoɔ ʇo won mɒ I ɘɿɘʜW"
+                    
+.ɘɿɘʜwon ɘd bυoY" .γlƨυoυɈqmɘɈnoɔ bɘɈɿoɈɘɿ ɘɘbɘlbɘɘwT υoγ ɈoИ" 
+                    
+"!mɒɘɿb ƨiʜ ni ϱniʜɈ ʇo Ɉɿoƨ ɒ γlno ɘɿυoγ ,γʜW 
+                    
+"!dɿdɿɘlbnɒɔ ɒ ɘʞil Ɉƨυį ϱnɒd 'Ɉυo oϱ b'υoγ ",mυbɘlbɘɘwT bɘbbɒ " ɘʞɒw oɈ ƨɒw ϱniﻼɘɿɘʜɈ ɈɒʜɈ ʇI"   
+                    
+ɘɘbɘlbɘɘwT bnA mυbɘlbɘɘwT--
+                  </p>
+                </div>
+                <div id="chapter5" class="scrolling opacity1">
+                  <p>
+                  
+Alice carefully released the brush, and did her best to get the hair into order. “Come, you look rather better now!” she said, after altering most of the pins. “But really you should have a lady’s maid!”
+
+“I’m sure I’ll take you with pleasure!” the Queen said. “Twopence a week, and jam every other day.”
+
+Alice couldn’t help laughing, as she said, “I don’t want you to hire me—and I don’t care for jam.”
+
+“It’s very good jam,” said the Queen.
+
+“Well, I don’t want any to-day, at any rate.”
+
+“You couldn’t have it if you did want it,” the Queen said. “The rule is, jam to-morrow and jam yesterday—but never jam to-day.”
+
+“It must come sometimes to ‘jam to-day,’” Alice objected.
+
+“No, it can’t,” said the Queen. “It’s jam every other day: to-day isn’t any other day, you know.”
+
+“I don’t understand you,” said Alice. “It’s dreadfully confusing!”
+
+“That’s the effect of living backwards,” the Queen said kindly: “it always makes one a little giddy at first—”
+
+“Living backwards!” Alice repeated in great astonishment. “I never heard of such a thing!”
+
+“—but there’s one great advantage in it, that one’s memory works both ways.”
+
+“I’m sure mine only works one way,” Alice remarked. “I can’t remember things before they happen.”
+
+“It’s a poor sort of memory that only works backwards,” the Queen remarked.
+
+“What sort of things do you remember best?” Alice ventured to ask.
+
+“Oh, things that happened the week after next,” the Queen replied in a careless tone. “For instance, now,” she went on, sticking a large piece of plaster on her finger as she spoke, “there’s the King’s Messenger. He’s in prison now, being punished: and the trial doesn’t even begin till next Wednesday: and of course the crime comes last of all.”
+
+“Suppose he never commits the crime?” said Alice.
+
+“That would be all the better, wouldn’t it?” the Queen said, as she bound the plaster round her finger with a bit of ribbon.
+
+Alice felt there was no denying that. “Of course it would be all the better,” she said: “but it wouldn’t be all the better his being punished.”
+
+“You’re wrong there, at any rate,” said the Queen: “were you ever punished?”
+
+“Only for faults,” said Alice.
+
+“And you were all the better for it, I know!” the Queen said triumphantly.
+
+“Yes, but then I had done the things I was punished for,” said Alice: “that makes all the difference.”
+
+“But if you hadn’t done them,” the Queen said, “that would have been better still; better, and better, and better!” Her voice went higher with each “better,” till it got quite to a squeak at last.
+
+Alice was just beginning to say “There’s a mistake somewhere—,” when the Queen began screaming so loud that she had to leave the sentence unfinished. “Oh, oh, oh!” shouted the Queen, shaking her hand about as if she wanted to shake it off. “My finger’s bleeding! Oh, oh, oh, oh!”
+
+Her screams were so exactly like the whistle of a steam-engine, that Alice had to hold both her hands over her ears.
+
+“What is the matter?” she said, as soon as there was a chance of making herself heard. “Have you pricked your finger?”
+
+“I haven’t pricked it yet,” the Queen said, “but I soon shall—oh, oh, oh!”
+
+“When do you expect to do it?” Alice asked, feeling very much inclined to laugh.
+
+“When I fasten my shawl again,” the poor Queen groaned out: “the brooch will come undone directly. Oh, oh!” As she said the words the brooch flew open, and the Queen clutched wildly at it, and tried to clasp it again.
+
+“Take care!” cried Alice. “You’re holding it all crooked!” And she caught at the brooch; but it was too late: the pin had slipped, and the Queen had pricked her finger.
+
+“That accounts for the bleeding, you see,” she said to Alice with a smile. “Now you understand the way things happen here.”
+
+“But why don’t you scream now?” Alice asked, holding her hands ready to put over her ears again.
+
+“Why, I’ve done all the screaming already,” said the Queen. “What would be the good of having it all over again?”
+
+                  </p>
+                </div>
+                  <div id="chapter6" class="scrolling opacity1">
+                    <p>
+Alice didn’t know what to say to this: it wasn’t at all like conversation, she thought, as he never said anything to her; in fact, his last remark was evidently addressed to a tree—so she stood and softly repeated to herself:—
+
+“Humpty Dumpty sat on a wall:
+Humpty Dumpty had a great fall.
+All the King’s horses and all the King’s men
+Couldn’t put Humpty Dumpty in his place again.”
+
+“That last line is much too long for the poetry,” she added, almost out loud, forgetting that Humpty Dumpty would hear her.
+
+“Don’t stand there chattering to yourself like that,” Humpty Dumpty said, looking at her for the first time, “but tell me your name and your business.”
+
+“My name is Alice, but—”
+
+“It’s a stupid enough name!” Humpty Dumpty interrupted impatiently. “What does it mean?”
+
+“Must a name mean something?” Alice asked doubtfully.
+
+“Of course it must,” Humpty Dumpty said with a short laugh: “my name means the shape I am—and a good handsome shape it is, too. With a name like yours, you might be any shape, almost.”
+
+“Why do you sit out here all alone?” said Alice, not wishing to begin an argument.
+
+“Why, because there’s nobody with me!” cried Humpty Dumpty. “Did you think I didn’t know the answer to that? Ask another.”
+
+“Don’t you think you’d be safer down on the ground?” Alice went on, not with any idea of making another riddle, but simply in her good-natured anxiety for the queer creature. “That wall is so very narrow!”
+
+“What tremendously easy riddles you ask!” Humpty Dumpty growled out. “Of course I don’t think so! Why, if ever I did fall off—which there’s no chance of—but if I did—” Here he pursed his lips and looked so solemn and grand that Alice could hardly help laughing. “If I did fall,” he went on, “The King has promised me—with his very own mouth—to—to—”
+
+“To send all his horses and all his men,” Alice interrupted, rather unwisely.
+
+“Now I declare that’s too bad!” Humpty Dumpty cried, breaking into a sudden passion. “You’ve been listening at doors—and behind trees—and down chimneys—or you couldn’t have known it!”
+
+“I haven’t, indeed!” Alice said very gently. “It’s in a book.”
+
+“Ah, well! They may write such things in a book,” Humpty Dumpty said in a calmer tone. “That’s what you call a History of England, that is. Now, take a good look at me! I’m one that has spoken to a King, I am: mayhap you’ll never see such another: and to show you I’m not proud, you may shake hands with me!” And he grinned almost from ear to ear, as he leant forwards (and as nearly as possible fell off the wall in doing so) and offered Alice his hand. She watched him a little anxiously as she took it. “If he smiled much more, the ends of his mouth might meet behind,” she thought: “and then I don’t know what would happen to his head! I’m afraid it would come off!”
+
+“Yes, all his horses and all his men,” Humpty Dumpty went on. “They’d pick me up again in a minute, they would! However, this conversation is going on a little too fast: let’s go back to the last remark but one.”
+
+“I’m afraid I can’t quite remember it,” Alice said very politely.
+
+“In that case we start fresh,” said Humpty Dumpty, “and it’s my turn to choose a subject—” (“He talks about it just as if it was a game!” thought Alice.) “So here’s a question for you. How old did you say you were?”
+
+Alice made a short calculation, and said “Seven years and six months.”
+
+“Wrong!” Humpty Dumpty exclaimed triumphantly. “You never said a word like it!”
+
+“I though you meant ‘How old are you?’” Alice explained.
+
+“If I’d meant that, I’d have said it,” said Humpty Dumpty.
+
+Alice didn’t want to begin another argument, so she said nothing.
+
+“Seven years and six months!” Humpty Dumpty repeated thoughtfully. “An uncomfortable sort of age. Now if you’d asked my advice, I’d have said ‘Leave off at seven’—but it’s too late now.”
+
+“I never ask advice about growing,” Alice said indignantly.
+
+“Too proud?” the other inquired.
+
+Alice felt even more indignant at this suggestion. “I mean,” she said, “that one can’t help growing older.”
+
+“One can’t, perhaps,” said Humpty Dumpty, “but two can. With proper assistance, you might have left off at seven.”
+
+“What a beautiful belt you’ve got on!” Alice suddenly remarked.
+
+(They had had quite enough of the subject of age, she thought: and if they really were to take turns in choosing subjects, it was her turn now.) “At least,” she corrected herself on second thoughts, “a beautiful cravat, I should have said—no, a belt, I mean—I beg your pardon!” she added in dismay, for Humpty Dumpty looked thoroughly offended, and she began to wish she hadn’t chosen that subject. “If I only knew,” she thought to herself, “which was neck and which was waist!”
+
+Evidently Humpty Dumpty was very angry, though he said nothing for a minute or two. When he did speak again, it was in a deep growl.
+
+“It is a—most—provoking—thing,” he said at last, “when a person doesn’t know a cravat from a belt!”
+
+“I know it’s very ignorant of me,” Alice said, in so humble a tone that Humpty Dumpty relented.
+
+“It’s a cravat, child, and a beautiful one, as you say. It’s a present from the White King and Queen. There now!”
+
+“Is it really?” said Alice, quite pleased to find that she had chosen a good subject, after all.
+
+“They gave it me,” Humpty Dumpty continued thoughtfully, as he crossed one knee over the other and clasped his hands round it, “they gave it me—for an un-birthday present.”
+
+“I beg your pardon?” Alice said with a puzzled air.
+
+“I’m not offended,” said Humpty Dumpty.
+
+“I mean, what is an un-birthday present?”
+
+“A present given when it isn’t your birthday, of course.”
+
+Alice considered a little. “I like birthday presents best,” she said at last.
+
+“You don’t know what you’re talking about!” cried Humpty Dumpty. “How many days are there in a year?”
+
+“Three hundred and sixty-five,” said Alice.
+
+“And how many birthdays have you?”
+
+“One.”
+
+“And if you take one from three hundred and sixty-five, what remains?”
+
+“Three hundred and sixty-four, of course.”
+
+Humpty Dumpty looked doubtful. “I’d rather see that done on paper,” he said.
+
+Alice couldn’t help smiling as she took out her memorandum-book, and worked the sum for him:
+
+365
+    1
+____
+364
+___
+
+Humpty Dumpty took the book, and looked at it carefully. “That seems to be done right—” he began.
+
+“You’re holding it upside down!” Alice interrupted.
+
+“To be sure I was!” Humpty Dumpty said gaily, as she turned it round for him. “I thought it looked a little queer. As I was saying, that seems to be done right—though I haven’t time to look it over thoroughly just now—and that shows that there are three hundred and sixty-four days when you might get un-birthday presents—”
+
+“Certainly,” said Alice.
+
+“And only one for birthday presents, you know. There’s glory for you!”
+
+“I don’t know what you mean by ‘glory,’” Alice said.
+
+Humpty Dumpty smiled contemptuously. “Of course you don’t—till I tell you. I meant ‘there’s a nice knock-down argument for you!’”
+
+“But ‘glory’ doesn’t mean ‘a nice knock-down argument,’” Alice objected.
+
+“When I use a word,” Humpty Dumpty said in rather a scornful tone, “it means just what I choose it to mean—neither more nor less.”
+
+“The question is,” said Alice, “whether you can make words mean so many different things.”
+
+“The question is,” said Humpty Dumpty, “which is to be master—that’s all.”
+
+Alice was too much puzzled to say anything, so after a minute Humpty Dumpty began again. “They’ve a temper, some of them—particularly verbs, they’re the proudest—adjectives you can do anything with, but not verbs—however, I can manage the whole lot of them! Impenetrability! That’s what I say!”
+
+“Would you tell me, please,” said Alice “what that means?”
+
+“Now you talk like a reasonable child,” said Humpty Dumpty, looking very much pleased. “I meant by ‘impenetrability’ that we’ve had enough of that subject, and it would be just as well if you’d mention what you mean to do next, as I suppose you don’t mean to stop here all the rest of your life.”
+
+“That’s a great deal to make one word mean,” Alice said in a thoughtful tone.
+
+“When I make a word do a lot of work like that,” said Humpty Dumpty, “I always pay it extra.”
+
+“Oh!” said Alice. She was too much puzzled to make any other remark.
+
+“Ah, you should see ’em come round me of a Saturday night,” Humpty Dumpty went on, wagging his head gravely from side to side: “for to get their wages, you know.”
+                    </p>
+                  </div>
+                  <div id="chapter7" class="scrolling opacity1">
+                    <p>
+
+dɿwoɿd bɘbυolɔnυ ɘɿυq ɘʜɈ ʇo bliʜƆ
+!ɿɘbnow ʇo ƨɘγɘ ϱnimɒɘɿb bnA
+υoʜɈ bnɒ I bnɒ Ɉɘɘlʇ ɘd ɘmiɈ ʜϱυoʜT
+ ɿɘbnυƨɒ  ɘʇil ɒ ʇlɒʜ ɘɿA
+liɒʜ γlɘɿυƨ lliw ɘlimƨ ϱnivol γʜT
+ ɘlɒɈ-γɿiɒʇ ɒ ʇo Ɉʇiϱ ɘvol ɘʜT
+ɘɔɒʇ γnnυƨ γʜɈ nɘɘƨ Ɉon ɘvɒʜ I
+                      
+ɿɘɈʜϱυɒl ɿɘvliƨ γʜɈ bɿɒɘʜ ɿoИ
+ɘɔɒlq ɒ bniʇ llɒʜƨ ɘm ʇo ɈʜϱυoʜɈ oИ
+ɿɘɈʇɒɘɿɘʜ ƨɘʇil ϱnυoγ γʜɈ nI 
+liɒʇ Ɉon Ɉliw υoʜɈ won ɈɒʜɈ ʜϱυonƎ
+ ɘlɒɈ-γɿiɒʇ γm oɈ nɘɈƨil oT
+                      
+ƨγɒb ɿɘʜɈo ni nυϱɘd ɘlɒɈ A
+ϱniwolϱ ɘɿɘw ƨnυƨ ɿɘmmυƨ nɘʜW
+dɿɘmiɈ oɈ bɘvɿɘƨ ɈɒʜɈ ɘmiʜɔ ɘlqmiƨ A
+--ϱniwoɿ ɿɒo ʇo mʜɈγʜɿ ɘʜT 
+Ɉɘγ γɿomɘm ni ɘvil ƨɘoʜɔɘ ɘƨoʜW
+"Ɉɘϱɿoʇ" γɒƨ blυow ƨɿɒɘγ ƨυoivnɘ ʜϱυoʜT
+                      
+bɒɘɿb ʇo ɘɔiov ɘɿɘ nɘʜɈ nɘʞɿɒɘʜ ɘmoƆ
+nɘbɒl ƨϱnibiɈ ɿɘɈɈid ʜɈiW 
+bɘd ɘmoɔlɘwnυ oɈ nommυƨ llɒʜƧ
+nɘbiɒm γloʜɔnɒlɘm A
+ɿɒɘb ,nɘɿbliʜɔ ɿɘblo Ɉυd ɘɿɒ ɘW
+ɿɒɘn  ɘmiɈbɘd ɿυo bniʇ oɈ Ɉɘɿʇ oʜW
+                      
+wonƨ ϱnibnild ɘʜɈ ,Ɉƨoɿʇ ɘʜɈ ,ɈυoʜɈiW
+ƨƨɘnbɒm γboom ƨbniwmɿoɈƨ ɘʜT 
+wolϱ γbbυɿ ƨɈʜϱilɘɿiʇ ɘʜɈ niʜɈiW
+ƨƨɘnbɒlϱ ʇo Ɉƨɘn ƨbooʜbliʜɔ bnA
+Ɉƨɒʇ ɘɘʜɈ bloʜ llɒʜƨ  ƨbɿow ɔiϱɒm ɘʜT
+Ɉƨɒld ϱnivɒɿ ɘʜɈ bɘɘʜ Ɉon Ɉlɒʜƨ υoʜT
+                      
+ʜϱiƨ ɒ ʇo wobɒʜƨ ɘʜɈ ʜϱυoʜɈ bnA
+γɿoɈƨ ɘʜɈ ʜϱυoɿʜɈ ɘldmɘɿɈ γɒM 
+γd ɘnoϱ  ƨγɒb ɿɘmmυƨ γqqɒʜ ɿoᆿ
+--γɿolϱ ɿɘmmυƨ bʜƨinɒv bnA 
+ɘlɒd ʇo ʜɈɒɘɿd ʜɈiw ʜɔυoɈ Ɉon llɒʜƨ ɈI
+ɘlɒɈ-γɿiɒʇ ɿυo ʇo ɘɔnɒƨɒɘlq ɘʜT
+                    </p>
+                  </div>
+                  <div id="chapter8" class="scrolling opacity1">
+                    <p>
+                      *“He’s dreaming now,” said Tweedledee, “and what do you think he’s dreaming about?”*
+
+                      *Alice said, “Nobody can guess that.”*
+                      
+                      *“Why, about you!” Tweedledee exclaimed, clapping his hands triumphantly. “And if he left off dreaming about you, where do you suppose you’d be?”*
+                      
+                      *“Where I am now, of course,” said Alice.*
+                      
+                      *“Not you!” Tweedledee retorted contemptuously. “You’d be nowhere. Why, you’re only a sort of thing in his dream!”*
+                      
+                      *“If that there King was to wake,” added Tweedledum, “you’d go out — bang! — just like a candle!”*
+                      
+                      *– Lewis Carroll, “Through the Looking Glass” (1871)*
+                    </p>
+                  </div>
+                <div id="quest1" class="scrolling opacity">
+                  <h3>Question 1</h3>
+                  <p> What is the name of the cat?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest2" class="scrolling opacity">
+                  <h3>Question 2</h3>
+                  <p> What is her name?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest3" class="scrolling opacity">
+                  <h3>Question 3</h3>
+                  <p> What does she want to do?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest4" class="scrolling opacity">
+                  <h3>Question 4</h3>
+                  <p> What if she doesn't get what she want?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest5" class="scrolling opacity">
+                  <h3>Question 5</h3>
+                  <p> Now. What's next?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest6" class="scrolling opacity">
+                  <h3>Question 6</h3>
+                  <p>Who is telling the story?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest7" class="scrolling opacity">
+                  <h3>Question 7</h3>
+                  <p>Who is controlling who?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+                <div id="quest8" class="scrolling opacity">
+                  <h3>Question 8</h3>
+                  <p>Who are you?</p>
+                  <input type='text' class='question' placeholder=''>
+                </div>
+
+              </div>
+              </div>
+
+          
+
+              
+         </div>
+    
+
+    
+  </div >
+  
+
+
+</div >
+  
+
+
+
+
+
+
+
+
+  <main>
+    <!-- <div class="mirrorTouch"> -->
+      <canvas id="three"></canvas>
+      <!-- <canvas id="mirrorTouch"></canvas> -->
+    <!-- </div> -->
+  </main>
+
+
+ 
+</body>
+
+</html>
